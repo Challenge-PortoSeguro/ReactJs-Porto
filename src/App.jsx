@@ -1,12 +1,20 @@
-import { useState } from 'react'
-import Button from './components/Button'
+import { Outlet } from 'react-router-dom';
+import Layout from './components/Layout';
+import GlobalStyles from './theme/GlobalStyles';
+import DefaultColors from './theme/DefaultColors';
+import { ThemeProvider } from 'styled-components';
 
 function App() {
-  
+
 
   return (
     <>
-      <p>Hello World!</p>
+      <ThemeProvider theme={DefaultColors}>
+        <GlobalStyles />
+        <Layout>
+          <Outlet />
+        </Layout>
+      </ThemeProvider>
     </>
   )
 }
