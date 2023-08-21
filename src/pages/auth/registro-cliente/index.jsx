@@ -1,10 +1,10 @@
 import react from "react";
 
-const Registro = () => {
+const RegistroCliente = () => {
     return(
         <div>
             <h1>Registro</h1>
         </div>
     )
 }
-export default Registro;
+export default RegistroCliente;
