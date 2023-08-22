@@ -3,7 +3,7 @@ const DefaultColors = {
         text: {
             white: '#e8e8e8',
             black: '#252728',
-            description: '#828282',
+            description: '#b3b3b3',
             placeholder: '#545454',
             onFill: '#e8e8e8',
             link: '#0070E0',
@@ -18,18 +18,18 @@ const DefaultColors = {
             alert: '#c1292e',
         },
         button: {
-            normal: '#00375C',
-            hover: 'rgba(255, 255, 255, .05)',
-            active: '#007AF5',
+            normal: '#007AF5',
+            hover: 'rgba(0, 0, 0, .2)',
+            active: '#005AAA',
             disabled: '#67696b',
             secondary: '#e8e8e8',
         },
         background: {
-            header: '#13293D',
-            body: '#1B98E0',
-            footer: '#13293D',
+            primary: '#0368FE',
+            secondary: 'rgba(255, 255, 255, .90)',
             tertiary: '#E8F1F2',
             transparent: 'rgba(0, 0, 0, .30)',
+            white: '#fafafa',
         },
         border: {
             primary: '#8DBEDA',

@@ -1,4 +1,4 @@
-import { FaBox, FaX, FaUsers, FaGear, FaRocket, FaChevronLeft, FaEye, FaEyeSlash, FaBars, FaUserCheck, FaMessage, FaCircleInfo, FaPlus, FaCreditCard, FaUserLock, FaRightFromBracket } from 'react-icons/fa6';
+import { FaBox, FaX, FaCirclePlay, FaUsers, FaGear, FaRocket, FaChevronLeft, FaEye, FaEyeSlash, FaBars, FaUserCheck, FaMessage, FaCircleInfo, FaPlus, FaCreditCard, FaUserLock, FaRightFromBracket } from 'react-icons/fa6';
 
 const iconGallery = {
     info: (color, size, onClick) => <FaCircleInfo fill={color} size={size} onClick={onClick} />,
@@ -16,7 +16,8 @@ const iconGallery = {
     box: (color, size, onClick) => <FaBox fill={color} size={size} onClick={onClick} />,
     hamburguer: (color, size, onClick) => <FaBars fill={color} size={size} onClick={onClick} />,
     contact: (color, size, onClick) => <FaMessage fill={color} size={size} onClick={onClick} />,
-    close: (color, size, onClick) => <FaX fill={color} size={size} onClick={onClick} />, 
+    close: (color, size, onClick) => <FaX fill={color} size={size} onClick={onClick} />,
+    play: (color, size, onClick) => <FaCirclePlay fill={color} size={size} onClick={onClick} />,
 }
 
 const renderIcon = ({ name, color, size, onClick }) => iconGallery[name](color, size, onClick);
