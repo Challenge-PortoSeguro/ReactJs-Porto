@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import * as S from "./styles";
 import PropTypes from "prop-types";
 
-function Button({ children, redirect, disabled, variant = 'primary', type = "button", onClick, full }) {
+function Button({ children, redirect, disabled, variant = 'primary', type = "button", onClick, full, color = "#fff", link }) {
     const navigate = useNavigate()
 
     const handleClick = () => {
@@ -10,12 +10,16 @@ function Button({ children, redirect, disabled, variant = 'primary', type = "but
             navigate(redirect);
             return;
         }
+        if (link) {
+            window.open(link, '_blank');
+            return;
+        }
         if (onClick) onClick();
     }
 
     return (
-        <S.Button type={type} $variant={variant} onClick={handleClick} disabled={disabled} $full={full}>
-            {variant === 'link' ? <S.LinkButton className="Link" to={redirect}>{children}</S.LinkButton> : children}
+        <S.Button color={color} type={type} $variant={variant} onClick={handleClick} disabled={disabled} $full={full}>
+            {variant === 'link' ? <S.LinkButton className="Link" to={redirect} color={color} target="_blank">{children}</S.LinkButton> : children}
         </S.Button>
     );
 }
@@ -28,6 +32,7 @@ Button.propTypes = {
     onClick: PropTypes.func,
     disabled: PropTypes.bool,
     full: PropTypes.bool,
+    color: PropTypes.string,
 }
 
 export default Button;

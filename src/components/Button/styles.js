@@ -16,9 +16,9 @@ function getVariantStyle(variant, disabled) {
             height: 40px;
             font-weight: 600;
             font-size: 16px;
-            background: ${({ theme }) => theme.colors.button.active};
-            border: 1px solid ${({ theme }) => theme.colors.border.transparent};
-            color: ${({ theme }) => theme.colors.text.white};
+            background: transparent;
+            border: 1px solid ${({ theme }) => theme.colors.border.field};
+            color: ${({ theme }) => theme.colors.text.black};
             &:hover {
                 color: ${({ theme }) => theme.colors.text.black};
                 background: ${({ theme }) => theme.colors.button.secondary};
@@ -50,6 +50,7 @@ function getVariantStyle(variant, disabled) {
             }
         `,
         link: css`
+            height: 40px;
             background: none;
             border: none;
             &:hover {
@@ -74,11 +75,13 @@ export const Button = styled.button`
     align-items: center;
     justify-content: center;
     gap: 8px;
-    border-radius: 8px;
+    border-radius: 6px;
     transition: background 0.3s;
     cursor: pointer;
     outline: none;
     font-family: 'Inter';
+    min-width: 100px;
+    color: ${({ color }) => color ? color : '#fff'};
     width: ${({ $full }) => $full ? '100%' : 'fit-content'};
 
     ${({ $variant, disabled }) => getVariantStyle($variant, disabled)}
@@ -95,6 +98,7 @@ export const LinkButton = styled.a`
     cursor: pointer;
     outline: none;
     font-family: 'Inter';
+    color: ${({ color }) => color ? color : '#fff'};
     width: ${({ $full }) => $full ? '100%' : 'fit-content'};
     text-decoration: none;
 
