@@ -18,7 +18,7 @@ const LoginColaborador = () => {
                 <Button full variant="secondary">Login</Button>
                 <S.ButtonsContainer>
                     <Button full variant="link" redirect="/login/cliente">Acessar como Cliente</Button>
-                    <Button full variant="link" redirect="/registro/colaborador">Ainda não possui uma conta? Cadastre uma!</Button>
+                    <Button full variant="link" redirect="/register/colaborador">Ainda não possui uma conta? Cadastre uma!</Button>
                 </S.ButtonsContainer>
             </S.Form>
         </S.Container>
