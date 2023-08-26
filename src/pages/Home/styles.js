@@ -9,6 +9,7 @@ export const HomeSection = styled.section`
     align-items: center;
     justify-content: center;
     height: fit-content;
+    /* gap: 5rem; */
 `;
 
 export const WelcomeDiv = styled.div`
@@ -97,27 +98,29 @@ export const IllustrationWelcome = styled.div`
 
 
 
+
+
 export const AboutDiv = styled.section`
     background: rgba( 59, 135, 247, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 90vh;
     width: 97%;
-    border-radius: 8px;
 `;
 
 export const AboutTitle = styled.h1`
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: ${({ theme }) => theme.colors.text.black};
+    color: ${({ theme }) => theme.colors.text.body};
     font-size: 3rem;
     font-weight: 700;
     margin: 4rem 0 0 0;
@@ -150,7 +153,7 @@ export const InfoContent = styled.div`
 `;
 export const InfoText = styled.div`
     text-align: justify;
-    color: ${({ theme }) => theme.colors.text.black};
+    color: ${({ theme }) => theme.colors.text.body};
     font-size: 1.5rem;
     font-weight: 500;
 `;
@@ -158,25 +161,65 @@ export const InfoText = styled.div`
 
 
 
+
+
 export const PrinciplesDiv = styled.div`
-    background-color: ${({ theme }) => theme.colors.background.white};
+    background: rgba( 59, 135, 247, 0.4 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
     display: flex;
+    align-items: center;
     flex-direction: column;
+    height: 90vh;
+    width: 97%;
 `;
 export const PrinciplesTitle = styled.h1`
-    color: ${({ theme }) => theme.colors.text.black};
+    color: ${({ theme }) => theme.colors.text.body};
     font-size: 2.5rem;
     font-weight: 700;
+    margin: 5rem 0 -8rem 0;
+`;
+export const PrinciplesContent = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+`;
+export const Principle = styled.h3`
+    color: ${({ theme }) => theme.colors.text.black};
+    font-size: 1.5rem;
+    font-weight: 500;
 `;
 
 
 
 export const ContactDiv = styled.div`
-    background-color: ${({ theme }) => theme.colors.background.tertiary};
+   background: rgba( 59, 135, 247, 0.4 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    /* border-radius: 10px; */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    width: 97%;
+    margin: 0 0 1rem 0;
 `;
 export const ContactTitle = styled.h1`
-    color: ${({ theme }) => theme.colors.text.primary};
+    color: ${({ theme }) => theme.colors.text.body};
     font-size: 2.5rem;
     font-weight: 700;
+    text-align: center;
+    width: 100%;
+`;
+export const FormContact = styled.form`
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 0.8rem;
 `;

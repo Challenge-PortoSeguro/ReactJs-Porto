@@ -1,6 +1,7 @@
 const DefaultColors = {
     colors: {
         text: {
+            body: '#fff',
             white: '#e8e8e8',
             black: '#252728',
             description: '#b3b3b3',
