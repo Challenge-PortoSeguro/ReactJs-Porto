@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import fundo from '../../assets/img/background.jpg';
+import team from '../../assets/img/team.png';
+import gifAI from "../../assets/img/gif_AI.gif";
 
 export const HomeSection = styled.section`
-    background-color: ${({ theme }) => theme.colors.background.tertiary};
+    background-color: ${({ theme }) => theme.colors.background.white};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +12,6 @@ export const HomeSection = styled.section`
 `;
 
 export const WelcomeDiv = styled.div`
-    background-color: ${({ theme }) => theme.colors.background.white};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,10 +82,13 @@ export const ButtonsDiv = styled.div`
         justify-content: center;
     }
 `;
-export const Illustration = styled.img`
-    object-fit: contain;
-    object-position: center;
+export const IllustrationWelcome = styled.div`
+    background-image: url(${gifAI});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 50%;
+    height: 100%;
 
     @media (max-width: 830px) {
         width: 60%;
@@ -94,21 +97,86 @@ export const Illustration = styled.img`
 
 
 
-export const WhoAreWeDiv = styled.section`
-    background-color: ${({ theme }) => theme.colors.background.primary};
+export const AboutDiv = styled.section`
+    background: rgba( 59, 135, 247, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 80%;
+    height: 90vh;
+    width: 97%;
     border-radius: 8px;
 `;
 
-export const WhoAreWeTitle = styled.h1`
+export const AboutTitle = styled.h1`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: ${({ theme }) => theme.colors.text.black};
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 4rem 0 0 0;
+    font-family: "Inter", sans-serif;
+`;
+
+export const InfoDiv = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+`;
+export const IllustrationAbout = styled.div`
+    background-image: url(${team});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 90%;
+`;
+export const InfoContent = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+`;
+export const InfoText = styled.div`
+    text-align: justify;
+    color: ${({ theme }) => theme.colors.text.black};
+    font-size: 1.5rem;
+    font-weight: 500;
+`;
+
+
+
+
+export const PrinciplesDiv = styled.div`
+    background-color: ${({ theme }) => theme.colors.background.white};
+    display: flex;
+    flex-direction: column;
+`;
+export const PrinciplesTitle = styled.h1`
+    color: ${({ theme }) => theme.colors.text.black};
+    font-size: 2.5rem;
+    font-weight: 700;
+`;
+
+
+
+export const ContactDiv = styled.div`
+    background-color: ${({ theme }) => theme.colors.background.tertiary};
+    display: flex;
+`;
+export const ContactTitle = styled.h1`
     color: ${({ theme }) => theme.colors.text.primary};
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
-    font-family: "Inter", sans-serif;
 `;
