@@ -6,7 +6,7 @@ export const Container = styled.div`
     display: flex;
     width: 100%;
     height: 100%;
-    background: ${({ theme }) => theme.colors.background.body};
+    background: ${({ theme }) => theme.colors.background.white};
 `;
 
 export const LoginBackgroundContainerCliente = styled.div`
@@ -48,7 +48,7 @@ export const Logo = styled.img`
 export const Title = styled.h1`
     font-size: 24px;
     font-weight: 600;
-    color: ${({ theme }) => theme.colors.text.white};
+    color: ${({ theme }) => theme.colors.text.black};
     margin-bottom: 16px;
 `;
 
