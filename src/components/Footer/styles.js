@@ -7,7 +7,7 @@ export const Footer = styled.footer`
   width: 100%;
   min-height: 40px;
   border-top: 1px solid ${({ theme }) => theme.colors.border.transparent};
-  background: ${({ theme }) => theme.colors.background.footer};
+  background: ${({ theme }) => theme.colors.background.secondary};
 
   @media screen and (max-width: 720px) {
     font-size: 14px;
@@ -16,7 +16,7 @@ export const Footer = styled.footer`
 
 export const Text = styled.p`
     font-size: 12px;
-    color: ${({ theme }) => theme.colors.text.white};
+    color: ${({ theme }) => theme.colors.text.black};
     font-family: 'Inter';
     font-weight: 400;
     margin: 0;
