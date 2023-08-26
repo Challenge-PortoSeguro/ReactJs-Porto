@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-export const InputContainer = styled.div``;
+export const InputContainer = styled.div`
+	& label{
+		color: ${({ theme, labelColor }) => labelColor ? labelColor : theme.colors.text.black};
+	}
+`;
 
 export const Input = styled.input`
 	border-radius: 4px;
@@ -8,8 +12,8 @@ export const Input = styled.input`
 	box-sizing: border-box;
 	padding: 8px 16px;
 	outline: none;
-	border: 1px solid ${({ theme }) => theme.colors.border.transparent};
-	background: ${({ theme }) => theme.colors.background.tertiary};
+	border: 1px solid ${({ theme }) => theme.colors.border.field};
+	background: ${({ theme }) => theme.colors.background.secondary};
 	color: ${({ theme }) => theme.colors.text.black};
 
 	::placeholder {

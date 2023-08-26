@@ -2,10 +2,10 @@ import PropTypes from 'prop-types'
 import * as S from './styles'
 import { Label } from 'reactstrap'
 
-export function Input({ name, register, placeholder, error, readonly, type = 'text' }) {
+export function Input({ name, register, placeholder, error, readonly, type = 'text', labelColor }) {
 
 	return (
-		<S.InputContainer>
+		<S.InputContainer labelColor={labelColor}>
 			<Label>{name}</Label>
 			<S.Input
 				type={type}
@@ -24,5 +24,6 @@ Input.propTypes = {
 	placeholder: PropTypes.string,
 	error: PropTypes.object,
 	readonly: PropTypes.bool,
-	type: PropTypes.string
+	type: PropTypes.string,
+	labelColor: PropTypes.string
 }
