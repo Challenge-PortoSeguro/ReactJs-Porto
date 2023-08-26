@@ -1,12 +1,14 @@
-import { FaBox, FaX, FaCirclePlay, FaUsers, FaGear, FaRocket, FaChevronLeft, FaEye, FaEyeSlash, FaBars, FaUserCheck, FaMessage, FaCircleInfo, FaPlus, FaCreditCard, FaUserLock, FaRightFromBracket } from 'react-icons/fa6';
+import { FaBox, FaX, FaCirclePlay, FaInfinity, FaHandshakeSimple, FaUsers, FaGear, FaRocket, FaChevronLeft, FaEye, FaEyeSlash, FaBars, FaUserCheck, FaMessage, FaCircleInfo, FaPlus, FaCreditCard, FaUserLock, FaRightFromBracket } from 'react-icons/fa6';
 
 const iconGallery = {
     info: (color, size, onClick) => <FaCircleInfo fill={color} size={size} onClick={onClick} />,
     aboutus: (color, size, onClick) => <FaUsers fill={color} size={size} onClick={onClick} />,
     add: (color, size, onClick) => <FaPlus fill={color} size={size} onClick={onClick} />,
     gear: (color, size, onClick) => <FaGear fill={color} size={size} onClick={onClick} />,
+    infinity: (color, size, onClick) => <FaInfinity fill={color} size={size} onClick={onClick} />,
     rocket: (color, size, onClick) => <FaRocket fill={color} size={size} onClick={onClick} />,
     eyeOn: (color, size, onClick) => <FaEye fill={color} size={size} onClick={onClick} />,
+    handshake: (color, size, onClick) => <FaHandshakeSimple fill={color} size={size} onClick={onClick} />,
     eyeOff: (color, size, onClick) => <FaEyeSlash fill={color} size={size} onClick={onClick} />,
     money: (color, size, onClick) => <FaCreditCard fill={color} size={size} onClick={onClick} />,
     back: (color, size, onClick) => <FaChevronLeft fill={color} size={size} onClick={onClick} />,

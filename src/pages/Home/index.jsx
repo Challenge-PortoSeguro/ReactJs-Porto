@@ -1,14 +1,18 @@
 import { useMemo } from "react";
 import * as S from "./styles";
-import illustration from "../../assets/img/illustration14.png";
 import Button from "../../components/Button";
+import Card from "../../components/Card";
+import handshake from "../../assets/img/handshake.svg";
+import eficience from "../../assets/img/eficience.svg";
+import inovation from "../../assets/img/inovation.svg";
 import renderIcon from "../../utils/iconGallery";
+import { Input } from "../../components/Input";
 
 const Home = () => {
 
     const icons = useMemo(() => ({
         play: renderIcon({ name: "play", size: 18, color: "#000" }),
-        aboutus: renderIcon({ name: "aboutus", size: 62, color: "#252525" }),
+        aboutus: renderIcon({ name: "aboutus", size: 62, color: "#fff" }),
     }), [])
 
 
@@ -20,11 +24,12 @@ const Home = () => {
                     <S.HomeSubtitle>Descubra a revolução utilizando IA avançada para a coleta de dados precisos, garantindo proteção incomparável e processos eficientes.</S.HomeSubtitle>
                     <S.ButtonsDiv>
                         <Button variant="primary" redirect="/register/cliente">Cadastre-se</Button>
-                        <Button variant="secondary" link="https://youtu.be/dQw4w9WgXcQ">{icons.play} Assistir Vídeo</Button>
+                        <Button variant="secondary" link="https://youtu.be/dQw4w9WgXcQ">{icons.play} Assistir Apresentação</Button>
                     </S.ButtonsDiv>
                 </S.TextDiv>
                 <S.IllustrationWelcome />
             </S.WelcomeDiv>
+
             <S.AboutDiv>
                 <S.AboutTitle>{icons.aboutus} QUEM SOMOS</S.AboutTitle>
                 <S.InfoDiv>
@@ -46,11 +51,45 @@ const Home = () => {
                     </S.InfoContent>
                 </S.InfoDiv>
             </S.AboutDiv>
+
             <S.PrinciplesDiv>
                 <S.PrinciplesTitle>Nossos Princípios</S.PrinciplesTitle>
+                <S.PrinciplesContent>
+                    <Card 
+                        title="Inovação"
+                        desc="Para aprimorar a efetividade na seleção dos modais."
+                        img={inovation}
+                    />
+                    <Card
+                        title="Eficiência"
+                        desc="Para garantir a melhor experiência ao usuário."
+                        img={eficience}
+                    />
+                    <Card
+                        title="Comprometimento"
+                        desc="Para atender as necessidades de nossos clientes."
+                        img={handshake}
+                    />
+                </S.PrinciplesContent>
             </S.PrinciplesDiv>
+
             <S.ContactDiv>
                 <S.ContactTitle>Contato</S.ContactTitle>
+                <S.FormContact>
+                    <Input 
+                        name="Nome:" 
+                        id="nomeInput"
+                        type="text"
+                        placeholder="Digite seu nome"
+                    />
+                    <Input 
+                        name="Email:" 
+                        id="emailInput"
+                        type="email"
+                        placeholder="Digite seu email"
+                    />
+                    <Button variant="primary">Enviar</Button>
+                </S.FormContact>
             </S.ContactDiv>
         </S.HomeSection>
     );
