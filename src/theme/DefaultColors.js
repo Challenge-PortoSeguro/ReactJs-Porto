@@ -28,6 +28,7 @@ const DefaultColors = {
             primary: '#0368FE',
             secondary: 'rgba(255, 255, 255, .90)',
             tertiary: '#E8F1F2',
+            quaternary: '#3b87f7',
             transparent: 'rgba(0, 0, 0, .30)',
             white: '#fafafa',
         },
