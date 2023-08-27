@@ -12,7 +12,7 @@ const LoginColaborador = () => {
 
             <S.Form>
                 <S.Logo src={logo} />
-                <S.Title>Colaborador</S.Title>
+                <S.Title>Login Colaborador</S.Title>
                 <Input name="E-mail" placeholder="Digite seu email" />
                 <Input name="Senha" placeholder="Digite sua senha" />
                 <Button full variant="primary">Login</Button>
