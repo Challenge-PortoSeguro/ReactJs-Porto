@@ -40,7 +40,7 @@ const DefaultColors = {
             selected: '#007AF5',
             alert: '#C1292E',
             disabled: '#67696b',
-            transparent: 'rgba(255,255,255,.30)',
+            transparent: 'rgba(190,190,190,.30)',
         },
         status: {
             success: '#00CC55',
