@@ -13,6 +13,7 @@ const RegistroColaborador = () => {
     const [rgColaborador, setRgColaborador] = useState("");
     const [cnhColaborador, setCnhColaborador] = useState("");
     const [nascimentoColaborador, setNascimentoColaborador] = useState("");
+    const [enderecoColaborador, setEndereçoColaborador] = useState("");
     const [emailColaborador, setEmailColaborador] = useState("");
     const [senhaColaborador, setSenhaColaborador] = useState("");
     const [generoColaborador, setGeneroColaborador] = useState("");
@@ -42,6 +43,7 @@ const RegistroColaborador = () => {
             rgColaborador: rgColaborador,
             cnhColaborador: cnhColaborador,
             nascimentoColaborador: nascimentoColaborador,
+            enderecoColaborador: enderecoColaborador,
             generoColaborador: generoColaborador,
             telefoneColaborador: telefoneColaborador,
             emailColaborador: emailColaborador,
@@ -78,6 +80,7 @@ const RegistroColaborador = () => {
                     </S.InputGroup>
                     <Input name="CNH:" placeholder="Digite sua cnh" onChange={(e) => setCnhColaborador(e.target.value)} />
                     <Input name="Nascimento:" type="date" onChange={(e) => setNascimentoColaborador(e.target.value)} />
+                    <Input name="Endereço:" placeholder="Digite seu endereço" onChange={(e) => setEndereçoColaborador(e.target.value)} />
                     <S.InputGroup>
                         <Input name="Telefone:" type="tel" placeholder="Digite seu telefone" onChange={(e) => setTelefoneColaborador(e.target.value)} />
                         <Select name="Gênero:" noneOption="Escolha seu gênero" values={["Masculino", "Feminino", "Prefiro não dizer"]} selected={generoColaborador} onChange={(e) => setGeneroColaborador(e.target.value)}/>
@@ -106,7 +109,7 @@ const RegistroColaborador = () => {
                     </S.InputGroup>
                 </S.VehicleContainer>
                 <S.ButtonsContainer>
-                    {!changeInfo && <Button full variant="link" color="#000" redirect="/login/colaborador">Já possui uma conta?</Button>}
+                    {!changeInfo && <Button full variant="link" color="#000" redirect="/login/colaborator">Já possui uma conta?</Button>}
                 </S.ButtonsContainer>
             </S.Form>
         </S.Container>
