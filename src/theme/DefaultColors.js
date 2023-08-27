@@ -20,7 +20,7 @@ const DefaultColors = {
         },
         button: {
             normal: '#007AF5',
-            hover: 'rgba(0, 0, 0, .2)',
+            hover: 'rgba(0, 0, 0, .1)',
             active: '#005AAA',
             disabled: '#67696b',
             secondary: '#e8e8e8',
