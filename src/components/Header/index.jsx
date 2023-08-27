@@ -20,9 +20,6 @@ const Header = () => {
         navigate('/');
     }
 
-
-
-
     return (
         <H.HeaderBackground>
             <H.Navigation>
@@ -33,7 +30,7 @@ const Header = () => {
                     <Button variant="link" redirect='/login/cliente' color="#000">{icons.login} Login</Button>
                 </H.GroupButtons>
 
-                <Button variant="primary">SOS</Button>
+                <Button variant="primary" redirect="/chat">SOS</Button>
             </H.Navigation>
 
             <H.MenuHamburguer>
