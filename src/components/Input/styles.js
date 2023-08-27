@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const InputContainer = styled.div`
-	& label{
+	& label {
 		color: ${({ theme, labelColor }) => labelColor ? labelColor : theme.colors.text.black};
 	}
 `;
