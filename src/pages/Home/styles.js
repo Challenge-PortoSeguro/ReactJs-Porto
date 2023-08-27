@@ -9,7 +9,6 @@ export const HomeSection = styled.section`
     align-items: center;
     justify-content: center;
     height: fit-content;
-    /* gap: 5rem; */
 `;
 
 export const WelcomeDiv = styled.div`
@@ -22,6 +21,7 @@ export const WelcomeDiv = styled.div`
     @media (max-width: 830px) {
         flex-direction: column-reverse;
         justify-content: start;
+        padding: 5rem 0;
     }
 `;
 export const TextDiv = styled.div`
@@ -93,6 +93,10 @@ export const IllustrationWelcome = styled.div`
 
     @media (max-width: 830px) {
         width: 60%;
+        margin-top: -4rem;
+    }
+    @media (max-width: 768px) {
+        width: 100%;
     }
 `;
 
@@ -102,12 +106,10 @@ export const IllustrationWelcome = styled.div`
 
 export const AboutDiv = styled.section`
     background: rgba( 59, 135, 247, 0.4 );
-    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,6 +127,10 @@ export const AboutTitle = styled.h1`
     font-weight: 700;
     margin: 4rem 0 0 0;
     font-family: "Inter", sans-serif;
+
+    @media (max-width: 1440px) {
+        font-size: 2rem;
+    }
 `;
 
 export const InfoDiv = styled.div`
@@ -135,6 +141,10 @@ export const InfoDiv = styled.div`
     width: 100%;
     height: 100%;
     padding: 3rem;
+
+    @media (max-width: 968px) {
+        flex-direction: column;
+    }
 `;
 export const IllustrationAbout = styled.div`
     background-image: url(${team});
@@ -143,6 +153,14 @@ export const IllustrationAbout = styled.div`
     background-repeat: no-repeat;
     width: 50%;
     height: 90%;
+    @media (max-width: 968px) {
+        width: 50%;
+        height: 100%;
+    }
+    @media (max-width: 650px) {
+        width: 80%;
+        height: 100%;
+    }
 `;
 export const InfoContent = styled.div`
     display: flex;
@@ -150,12 +168,30 @@ export const InfoContent = styled.div`
     align-items: center;
     width: 50%;
     height: 90%;
+    @media (max-width: 968px) {
+        width: 70%;
+        height: 100%;
+    }
+    @media (max-width: 650px) {
+        width: 90%;
+        height: 100%;
+    }
 `;
 export const InfoText = styled.div`
     text-align: justify;
     color: ${({ theme }) => theme.colors.text.body};
     font-size: 1.5rem;
     font-weight: 500;
+    @media (max-width: 1440px) {
+        font-size: 1.2rem;
+    }
+    @media (max-width: 1024px) {
+        font-size: 1rem;
+    }
+    @media (max-width: 560px) {
+        
+        font-size: 0.8rem;
+    }
 `;
 
 
@@ -170,45 +206,91 @@ export const PrinciplesDiv = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    min-height: 80vh;
+    height: fit-content;
     width: 97%;
+    @media (max-width: 1024px) {
+        height: fit-content;
+    }
 `;
 export const PrinciplesTitle = styled.h1`
     color: ${({ theme }) => theme.colors.text.body};
     font-size: 2.5rem;
     font-weight: 700;
     margin: 5rem 0 -8rem 0;
+    text-align: center;
 `;
 export const PrinciplesContent = styled.div`
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+    gap: 1.5rem;
+    @media (max-width: 1024px) {
+        margin-top: 8rem;
+    }
 `;
-export const Principle = styled.h3`
-    color: ${({ theme }) => theme.colors.text.black};
-    font-size: 1.5rem;
-    font-weight: 500;
+
+
+
+
+
+
+
+export const GroupDiv = styled.div`
+    background: rgba( 59, 135, 247, 0.4 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 97%;
+    @media (max-width: 1440px) {
+        height: fit-content;
+        padding-bottom: 5rem;
+    }
 `;
+export const GroupTitle = styled.h1`
+    color: ${({ theme }) => theme.colors.text.body};
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 5rem 0 -8rem 0;
+`;
+export const GroupContent = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    @media (max-width: 1024px) {
+        margin-top: 8rem;
+    }
+`;
+
+
+
 
 
 
 export const ContactDiv = styled.div`
-   background: rgba( 59, 135, 247, 0.4 );
-    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    background: rgba( 59, 135, 247, 0.4 );
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
-    /* border-radius: 10px; */
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 35vh;
     width: 97%;
     margin: 0 0 1rem 0;
+    @media (max-width: 1024px) {
+        height: fit-content;
+    }
 `;
 export const ContactTitle = styled.h1`
     color: ${({ theme }) => theme.colors.text.body};
@@ -222,4 +304,9 @@ export const FormContact = styled.form`
     flex-direction: column;
     width: 500px;
     gap: 0.8rem;
+
+    @media (max-width: 650px) {
+        width: 100%;
+        padding: 2rem;
+    }
 `;

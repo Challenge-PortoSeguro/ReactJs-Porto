@@ -73,6 +73,51 @@ const Home = () => {
                 </S.PrinciplesContent>
             </S.PrinciplesDiv>
 
+            <S.GroupDiv>
+                <S.GroupTitle>Integrantes</S.GroupTitle>
+                <S.GroupContent>
+                    <Card
+                        title="Carlos Eduardo"
+                        desc="Back-End"
+                        img="https://github.com/carloseduardo7700.png"
+                        buttonLink1 = "https://github.com/carloseduardo7700"
+                        iconButton1="github"
+                    />
+                    <Card
+                        title="Eduardo Toshio"
+                        desc="Full-Stack"
+                        img="https://github.com/duh0127.png"
+                        buttonLink1 = "https://github.com/duh0127"
+                        iconButton1="github"
+                        buttonLink2 = "https://www.linkedin.com/in/eduardo-okubo/"
+                        iconButton2="linkedin"
+                    />
+                    <Card
+                        title="Kauê Alexandre"
+                        desc="Full-Stack"
+                        img="https://github.com/kauezin05.png"
+                        buttonLink1 = "https://github.com/kauezin05"
+                        iconButton1="github"
+                        buttonLink2 = "https://www.linkedin.com/in/kau%C3%AA-alexandre-de-oliveira/"
+                        iconButton2="linkedin"
+                    />
+                    <Card
+                        title="Mateus Vinicius"
+                        desc="Banco de Dados"
+                        img="https://github.com/matteocortezi.png"
+                        buttonLink1 = "https://github.com/matteocortezi"
+                        iconButton1="github"
+                    />
+                    <Card
+                        title="Vitor Miranda"
+                        desc="Back-End"
+                        img="https://github.com/vitormiranda11.png"
+                        buttonLink1 = "https://github.com/vitormiranda11"
+                        iconButton1="github"
+                    />
+                </S.GroupContent>
+            </S.GroupDiv>
+
             <S.ContactDiv>
                 <S.ContactTitle>Contato</S.ContactTitle>
                 <S.FormContact>
