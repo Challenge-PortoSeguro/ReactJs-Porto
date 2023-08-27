@@ -16,21 +16,17 @@ const Header = () => {
         contact: renderIcon({ name: "contact", size: 18, color: "#000" }),
     }), [])
 
-    const handleLogoClick = () => {
-        navigate('/');
-    }
-
     return (
         <H.HeaderBackground>
             <H.Navigation>
-                <H.Logo src={Logo} alt='Logo Porto Assistent' onClick={handleLogoClick} />
+                <H.Logo src={Logo} alt='Logo Porto Assistent' onClick={() => navigate('/')} />
                 <H.GroupButtons>
                     <Button variant="link" redirect='/' color="#000">{icons.aboutus} Sobre Nós</Button>
                     <Button variant="link" redirect='/' color="#000">{icons.contact} Contato</Button>
-                    <Button variant="link" redirect='/login/cliente' color="#000">{icons.login} Login</Button>
+                    <Button variant="link" redirect='/login/client' color="#000">{icons.login} Login</Button>
                 </H.GroupButtons>
 
-                <Button variant="primary" redirect="/chat">SOS</Button>
+                <Button variant="primary" redirect="/profile/client">SOS</Button>
             </H.Navigation>
 
             <H.MenuHamburguer>
