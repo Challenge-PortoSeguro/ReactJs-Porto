@@ -2,35 +2,21 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.border.primary};
-    width: 22rem;
+    max-width: 15rem;
+    min-width: 15rem;
     height: 25rem;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem;
     transition: all 0.3s ease-in-out;
-    @media (max-width: 1440px){
-        width: 18rem;
-        height: 23rem;
-    }
-    @media (max-width: 1024px){
-        width: 15rem;
-        height: 19rem;
-    }
-    @media (max-width: 840px){
-        width: 13rem;
-        height: 17rem;
-        margin: 0.4rem;
-    }
-    @media (max-width: 669px){
-        margin: 10px;
-    }
+
     @media (max-width: 460px){
-        width: 15rem;
-        height: 14rem;
+        max-width: 15rem;
+        height: fit-content;
     }
 `;
 
@@ -50,8 +36,12 @@ export const CardImage = styled.img`
     width: 100%;
     height: 100%;
     padding: 0.6rem;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
+    
+    @media (max-width: 1024px){
+        object-fit: contain;
+    }
 `;
 
 export const CardBody = styled.div`
@@ -59,7 +49,8 @@ export const CardBody = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 40%;
+    min-height: 40%;
+    padding: 0 0 0.5rem 0;
     background-color: transparent;
     align-items: center;
     @media (max-width: 1024px){
@@ -86,4 +77,14 @@ export const CardSubtitle = styled.h2`
     @media (max-width: 1024px){
         font-size: 0.9rem;
     }
+`;
+
+export const CardFooter = styled.div`
+    gap: 0.5rem;
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
