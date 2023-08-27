@@ -4,8 +4,8 @@ import App from "./App";
 import Home from "./pages/Home";
 import LoginCliente from "./pages/auth/login/login-cliente";
 import LoginColaborador from "./pages/auth/login/login-colaborador";
-import RegistroCliente from "./pages/auth/registro-cliente";
-import RegistroColaborador from "./pages/auth/registro-colaborador";
+import RegistroCliente from "./pages/auth/registro/registro-cliente";
+import RegistroColaborador from "./pages/auth/registro/registro-colaborador";
 
 const Router = () => {
     return (
