@@ -23,7 +23,7 @@ const Home = () => {
                     <S.HomeTitle>Bem vindo à revolucionaria asseguradora de veículos pesados</S.HomeTitle>
                     <S.HomeSubtitle>Descubra a revolução utilizando IA avançada para a coleta de dados precisos, garantindo proteção incomparável e processos eficientes.</S.HomeSubtitle>
                     <S.ButtonsDiv>
-                        <Button variant="primary" redirect="/register/cliente">Cadastre-se</Button>
+                        <Button variant="primary" redirect="/register/client">Cadastre-se</Button>
                         <Button variant="secondary" link="https://youtu.be/dQw4w9WgXcQ">{icons.play} Assistir Apresentação</Button>
                     </S.ButtonsDiv>
                 </S.TextDiv>
@@ -78,14 +78,14 @@ const Home = () => {
                 <S.GroupContent>
                     <Card
                         title="Carlos Eduardo"
-                        desc="Back-End"
+                        desc="RM 552164"
                         img="https://github.com/carloseduardo7700.png"
                         buttonLink1 = "https://github.com/carloseduardo7700"
                         iconButton1="github"
                     />
                     <Card
                         title="Eduardo Toshio"
-                        desc="Full-Stack"
+                        desc="RM 551763"
                         img="https://github.com/duh0127.png"
                         buttonLink1 = "https://github.com/duh0127"
                         iconButton1="github"
@@ -94,7 +94,7 @@ const Home = () => {
                     />
                     <Card
                         title="Kauê Alexandre"
-                        desc="Full-Stack"
+                        desc="RM 551812"
                         img="https://github.com/kauezin05.png"
                         buttonLink1 = "https://github.com/kauezin05"
                         iconButton1="github"
@@ -103,14 +103,14 @@ const Home = () => {
                     />
                     <Card
                         title="Mateus Vinicius"
-                        desc="Banco de Dados"
+                        desc="RM 551692"
                         img="https://github.com/matteocortezi.png"
                         buttonLink1 = "https://github.com/matteocortezi"
                         iconButton1="github"
                     />
                     <Card
                         title="Vitor Miranda"
-                        desc="Back-End"
+                        desc="RM 551451"
                         img="https://github.com/vitormiranda11.png"
                         buttonLink1 = "https://github.com/vitormiranda11"
                         iconButton1="github"
