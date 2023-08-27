@@ -13,6 +13,7 @@ const RegistroCliente = () => {
     const [rgCliente, setRgCliente] = useState("");
     const [cnhCliente, setCnhCliente] = useState("");
     const [nascimentoCliente, setNascimentoCliente] = useState("");
+    const [enderecoCliente, setEnderecoCliente] = useState("");
     const [emailCliente, setEmailCliente] = useState("");
     const [generoCliente, setGeneroCliente] = useState("");
     const [telefoneCliente, setTelefoneCliente] = useState("");
@@ -46,6 +47,7 @@ const RegistroCliente = () => {
             rgCliente: rgCliente,
             cnhCliente: cnhCliente,
             nascimentoCliente: nascimentoCliente,
+            enderecoCliente: enderecoCliente,
             generoCliente: generoCliente,
             telefoneCliente: telefoneCliente,
             emailCliente: emailCliente,
@@ -84,6 +86,7 @@ const RegistroCliente = () => {
                     </S.InputGroup>
                     <Input name="CNH:" placeholder="Digite sua cnh" onChange={(e) => setCnhCliente(e.target.value)} />
                     <Input name="Nascimento:" type="date" onChange={(e) => setNascimentoCliente(e.target.value)} />
+                    <Input name="Endereço" placeholder="Digite seu endereço" onChange={(e) => setEnderecoCliente(e.target.value)} />
                     <S.InputGroup>
                         <Input name="Telefone:" type="tel" placeholder="Digite seu telefone" onChange={(e) => setTelefoneCliente(e.target.value)} />
                         <Select name="Gênero:" noneOption="Escolha seu gênero" values={["Masculino", "Feminino", "Prefiro não dizer"]} selected={generoCliente} onChange={(e) => setGeneroCliente(e.target.value)}/>
@@ -116,7 +119,7 @@ const RegistroCliente = () => {
                     </S.InputGroup>
                 </S.VehicleContainer>
                 <S.ButtonsContainer>
-                    {!changeInfo && <Button full variant="link" color="#000" redirect="/login/cliente">Já possui uma conta?</Button>}
+                    {!changeInfo && <Button full variant="link" color="#000" redirect="/login/client">Já possui uma conta?</Button>}
                 </S.ButtonsContainer>
             </S.Form>
         </S.Container>

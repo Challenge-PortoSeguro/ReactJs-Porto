@@ -15,10 +15,10 @@ const LoginCliente = () => {
                 <S.Title>Login Cliente</S.Title>
                 <Input name="E-mail" placeholder="Digite seu email" />
                 <Input name="Senha" placeholder="Digite sua senha" />
-                <Button full variant="primary">Login</Button>
+                <Button full variant="primary" redirect="/profile/client">Login</Button>
                 <S.ButtonsContainer>
-                    <Button full variant="link" color="#000" redirect="/login/colaborador">Acessar como colaborador</Button>
-                    <Button full variant="link" color="#000" redirect="/register/cliente">Ainda não possui uma conta? Cadastre uma!</Button>
+                    <Button full variant="link" color="#000" redirect="/login/colaborator">Acessar como colaborador</Button>
+                    <Button full variant="link" color="#000" redirect="/register/client">Ainda não possui uma conta? Cadastre uma!</Button>
                 </S.ButtonsContainer>
             </S.Form>
         </S.Container>
