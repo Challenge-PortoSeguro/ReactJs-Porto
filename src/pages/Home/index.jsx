@@ -13,8 +13,7 @@ const Home = () => {
     const icons = useMemo(() => ({
         play: renderIcon({ name: "play", size: 18, color: "#000" }),
         aboutus: renderIcon({ name: "aboutus", size: 62, color: "#fff" }),
-    }), [])
-
+    }), []);
 
     return (
         <S.HomeSection>
@@ -82,6 +81,7 @@ const Home = () => {
                         img="https://github.com/carloseduardo7700.png"
                         buttonLink1 = "https://github.com/carloseduardo7700"
                         iconButton1="github"
+                        buttonLink2 = "https://www.linkedin.com/in/carlos-eduardo-mendon%C3%A7a-da-silva-88b816268/"
                     />
                     <Card
                         title="Eduardo Toshio"
@@ -107,6 +107,8 @@ const Home = () => {
                         img="https://github.com/matteocortezi.png"
                         buttonLink1 = "https://github.com/matteocortezi"
                         iconButton1="github"
+                        buttonLink2="https://www.linkedin.com/in/mateus-silva-51432326b/"
+                        iconButton2="linkedin"
                     />
                     <Card
                         title="Vitor Miranda"
@@ -114,6 +116,8 @@ const Home = () => {
                         img="https://github.com/vitormiranda11.png"
                         buttonLink1 = "https://github.com/vitormiranda11"
                         iconButton1="github"
+                        buttonLink2 = "https://www.linkedin.com/in/vitor-machado-miranda/"
+                        iconButton2="linkedin"
                     />
                 </S.GroupContent>
             </S.GroupDiv>
