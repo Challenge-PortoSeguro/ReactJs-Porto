@@ -148,7 +148,7 @@ export const InfoDiv = styled.div`
 `;
 export const IllustrationAbout = styled.div`
     background-image: url(${team});
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 50%;
@@ -157,8 +157,8 @@ export const IllustrationAbout = styled.div`
         width: 50%;
         height: 100%;
     }
-    @media (max-width: 650px) {
-        width: 80%;
+    @media (max-width: 768px) {
+        width: 100%;
         height: 100%;
     }
 `;
@@ -206,18 +206,14 @@ export const PrinciplesDiv = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 80vh;
     height: fit-content;
     width: 97%;
-    @media (max-width: 1024px) {
-        height: fit-content;
-    }
 `;
 export const PrinciplesTitle = styled.h1`
     color: ${({ theme }) => theme.colors.text.body};
     font-size: 2.5rem;
     font-weight: 700;
-    margin: 5rem 0 -8rem 0;
+    margin: 5rem 0 0 0;
     text-align: center;
 `;
 export const PrinciplesContent = styled.div`
@@ -229,7 +225,7 @@ export const PrinciplesContent = styled.div`
     height: 100%;
     gap: 1.5rem;
     @media (max-width: 1024px) {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 `;
 
@@ -246,10 +242,9 @@ export const GroupDiv = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    height: fit-content;
     width: 97%;
     @media (max-width: 1440px) {
-        height: fit-content;
         padding-bottom: 5rem;
     }
 `;
@@ -257,7 +252,7 @@ export const GroupTitle = styled.h1`
     color: ${({ theme }) => theme.colors.text.body};
     font-size: 2.5rem;
     font-weight: 700;
-    margin: 5rem 0 -8rem 0;
+    margin: 5rem 0 0 0;
 `;
 export const GroupContent = styled.div`
     display: flex;
@@ -267,7 +262,7 @@ export const GroupContent = styled.div`
     width: 100%;
     height: 100%;
     @media (max-width: 1024px) {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 `;
 
@@ -285,12 +280,9 @@ export const ContactDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 35vh;
+    height: fit-content;
     width: 97%;
-    margin: 0 0 1rem 0;
-    @media (max-width: 1024px) {
-        height: fit-content;
-    }
+    padding: 2rem 1rem;
 `;
 export const ContactTitle = styled.h1`
     color: ${({ theme }) => theme.colors.text.body};

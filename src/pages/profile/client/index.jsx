@@ -132,7 +132,7 @@ const ClientProfile = () => {
                             <S.SummonsListHeaderColumn style={({ width: "0px" })}>Ação</S.SummonsListHeaderColumn>
                         </S.SummonsListHeaderRow>
                         {valores.map((valor) => (
-                            <S.SummonsListHeaderRow>
+                            <S.SummonsListHeaderRow key={valor.id}>
                                 <S.SummonsListHeaderColumnValue>{valor.id}</S.SummonsListHeaderColumnValue>
                                 <S.SummonsListHeaderColumnValue>{valor.nome}</S.SummonsListHeaderColumnValue>
                                 <S.SummonsListHeaderColumnValue>{valor.modal}</S.SummonsListHeaderColumnValue>
