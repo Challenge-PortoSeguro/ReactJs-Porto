@@ -15,6 +15,10 @@ export const RegisterBackgroundContainerCliente = styled.div`
   height: 100%;
   background-position: bottom;
   background-size: cover;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const RegisterBackgroundContainerColaborador = styled.div`
@@ -23,6 +27,10 @@ export const RegisterBackgroundContainerColaborador = styled.div`
   height: 100%;
   background-position: bottom;
   background-size: cover;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 `;
 
 export const UserContainer = styled.div`
@@ -39,7 +47,12 @@ export const Form = styled.form`
     gap: 10px;
     padding: 32px;
     box-sizing: border-box;
+    min-width: 350px;
     background: ${({ theme }) => theme.colors.background.body};
+
+    @media (max-width: 425px) {
+        min-width: 0;
+    }
 `;
 
 export const InputGroup = styled.div`
