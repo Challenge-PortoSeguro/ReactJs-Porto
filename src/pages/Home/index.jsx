@@ -74,6 +74,7 @@ const Home = () => {
 
             <S.GroupDiv>
                 <S.GroupTitle>Integrantes</S.GroupTitle>
+                <S.GroupDesc href="https://github.com/Challenge-PortoSeguro/ReactJs-Porto.git" target="_blank">LINK DO REPOSITÓRIO</S.GroupDesc>
                 <S.GroupContent>
                     <Card
                         title="Carlos Eduardo"
