@@ -254,6 +254,9 @@ export const GroupTitle = styled.h1`
     font-weight: 700;
     margin: 5rem 0 0 0;
 `;
+export const GroupDesc = styled.a`
+    color: blue;
+`;
 export const GroupContent = styled.div`
     display: flex;
     flex-wrap: wrap;
