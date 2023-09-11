@@ -1,6 +1,5 @@
-// styles.js
-
 import styled from "styled-components";
+import bg_board from "../../assets/img/circuit-board.svg";
 
 export const ProfileSection = styled.section`
     background-color: ${({ theme }) => theme.colors.background.white};
@@ -110,6 +109,106 @@ export const ProfileChat = styled.div`
     height: 100%;
 `;
 
+export const Chat = styled.div`
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow-y: auto;
+`;
+
+
+export const ChatHeader = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+`;
+
+export const ChatHeaderTitle = styled.p`
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: ${({ theme }) => theme.colors.text.black};
+`;
+
+export const ChatBody = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 100%;
+`;
+
+export const Message = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+
+
+
+
+export const BotBox = styled.div`
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+`;
+export const ImgBot = styled.img`
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid ${({ theme }) => theme.colors.border.transparent};
+    box-shadow: 0 8px 32px 0 rgba( 20, 20, 20, 0.5 );
+`;
+export const Text = styled.p`
+    font-size: 1rem;
+    font-weight: 400;
+    color: ${({ theme }) => theme.colors.text.black};
+    margin-left: 0.5rem;
+`;
+
+
+
+
+
+export const UserBox = styled.div`
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1rem;
+`;
+export const ImgUser = styled.img`
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid ${({ theme }) => theme.colors.border.transparent};
+    box-shadow: 0 8px 32px 0 rgba( 20, 20, 20, 0.5 );
+`;
+
+export const SendBox = styled.div`
+    width: 100%;
+    position: relative;
+
+    & button{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    & input{
+        height: 40px;
+    }
+`;
 
 
 
