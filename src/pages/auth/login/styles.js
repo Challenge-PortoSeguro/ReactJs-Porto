@@ -57,3 +57,12 @@ export const ButtonsContainer = styled.div`
     flex-direction: column;
     gap: 0px;
 `;
+
+
+export const Error = styled.p`
+    text-align: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 14px;
+	color: ${({ theme }) => theme.colors.status.danger};
+`;
