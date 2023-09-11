@@ -21,8 +21,7 @@ function getVariantStyle(variant, disabled) {
             color: ${({ theme }) => theme.colors.text.black};
             &:hover {
                 color: ${({ theme }) => theme.colors.text.black};
-                background: ${({ theme }) => theme.colors.button.secondary};
-
+                background: ${({ theme }) => theme.colors.button.hover};
             }
         `,
         success: css`

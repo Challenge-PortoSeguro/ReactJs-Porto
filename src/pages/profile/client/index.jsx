@@ -30,10 +30,6 @@ const ClientProfile = () => {
         setStartChat(true);
     }
 
-    const handleSendMessage = (e) => {
-        setUserMessage([...userMessage, e.target.value]);
-    }
-
     return (
         <S.ProfileSection>
             <S.ContainerUp>
