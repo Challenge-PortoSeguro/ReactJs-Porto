@@ -8,14 +8,12 @@ function App() {
 
 
   return (
-    <>
-      <ThemeProvider theme={DefaultColors}>
-        <GlobalStyles />
-        <Layout>
-          <Outlet />
-        </Layout>
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={DefaultColors}>
+      <GlobalStyles />
+      <Layout>
+        <Outlet />
+      </Layout>
+    </ThemeProvider>
   )
 }
 
