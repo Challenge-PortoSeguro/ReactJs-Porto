@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import * as C from "./styles";
 import renderIcon from "../../utils/iconGallery";
 import Button from "../Button";
-import { redirect } from "react-router-dom";
 
 function Card({ title, desc, img, alt, icon = "user", redirect1, redirect2, buttonLink1, buttonLink2, iconButton1 = "user", iconButton2 = "user" }) {
   const Icon = useMemo(() => renderIcon({ name: icon, color: "#fff", size: 104 }), [icon]);
