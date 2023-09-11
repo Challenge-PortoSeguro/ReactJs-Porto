@@ -15,8 +15,9 @@ export const ContainerUp = styled.div`
     gap: 12px;
     height: calc(70vh - 60px);
 
-    @media (min-width: 768px) {
-        flex-direction: row;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: 100%;
     }
 `;
 
@@ -224,6 +225,10 @@ export const Summons = styled.div`
     flex-direction: column;
     height: calc(30vh - 64px);
     overflow-y: auto;
+
+    @media (max-width: 768px) {
+        height: 100%;
+    }
 `;
 export const SummonsList = styled.table`
     width: 100%;

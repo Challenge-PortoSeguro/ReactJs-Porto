@@ -17,6 +17,7 @@ const Header = () => {
         next: renderIcon({ name: "next", size: 18, color: "#000" }),
         aboutus: renderIcon({ name: "aboutus", size: 18, color: "#000" }),
         contact: renderIcon({ name: "contact", size: 18, color: "#000" }),
+        sos: renderIcon({ name: "sos", size: 40, color: "#000" }),
     }), []);
 
     return (
@@ -24,13 +25,12 @@ const Header = () => {
             <H.Navigation>
                 <H.Logo src={Logo} alt='Logo Porto Assistent' onClick={() => navigate('/')} />
                 <H.GroupButtons>
-                    <Button variant="link" redirect='/#aboutus' color="#000">{icons.aboutus} Sobre Nós</Button>
-                    <Button variant="link" redirect='/#contact' color="#000">{icons.contact} Contato</Button>
-                    <Button variant="link" redirect='/login/client' color="#000">{icons.login} Login</Button>
+                    <Button variant="secondary" redirect="/profile/client">{icons.sos}</Button>
                 </H.GroupButtons>
 
                 <H.ButtonSOS>
-                    <Button variant="primary" redirect="/profile/client">SOS</Button>
+
+                    <Button variant="link" redirect='/login/client' color="#000">{icons.login} Login</Button>
                 </H.ButtonSOS>
             </H.Navigation>
 
@@ -46,9 +46,7 @@ const Header = () => {
                                 {isMenuOpen && icons.next}
                             </H.IconBack>
                         </H.MobileMenuHeader>
-                        <Button variant="primary" full redirect="/profile/client">SOS</Button>
-                        <Button variant="link" full redirect='/' color="#000">{icons.aboutus} Sobre Nós</Button>
-                        <Button variant="link" full redirect='/' color="#000">{icons.contact} Contato</Button>
+                        <Button variant="secondary" full redirect="/profile/client">{icons.sos}</Button>
                         <Button variant="link" full redirect='/login/client' color="#000">{icons.login} Login</Button>
                     </H.MobileMenuContent>
                 </H.MobileMenu>

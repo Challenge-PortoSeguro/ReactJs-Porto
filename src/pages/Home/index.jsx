@@ -19,11 +19,11 @@ const Home = () => {
         <S.HomeSection>
             <S.WelcomeDiv>
                 <S.TextDiv>
-                    <S.HomeTitle>Bem vindo à revolucionaria asseguradora de veículos pesados</S.HomeTitle>
+                    <S.HomeTitle>Bem vindo à revolucionária asseguradora de veículos pesados</S.HomeTitle>
                     <S.HomeSubtitle>Descubra a revolução utilizando IA avançada para a coleta de dados precisos, garantindo proteção incomparável e processos eficientes.</S.HomeSubtitle>
                     <S.ButtonsDiv>
                         <Button variant="primary" redirect="/register/client">Cadastre-se</Button>
-                        <Button variant="secondary" link="https://youtu.be/dQw4w9WgXcQ">{icons.play} Assistir Apresentação</Button>
+                        <Button variant="secondary">{icons.play} Apresentação</Button>
                     </S.ButtonsDiv>
                 </S.TextDiv>
                 <S.IllustrationWelcome />
@@ -83,6 +83,7 @@ const Home = () => {
                         buttonLink1 = "https://github.com/carloseduardo7700"
                         iconButton1="github"
                         buttonLink2 = "https://www.linkedin.com/in/carlos-eduardo-mendon%C3%A7a-da-silva-88b816268/"
+                        iconButton2="linkedin"
                     />
                     <Card
                         title="Eduardo Toshio"

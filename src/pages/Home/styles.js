@@ -286,6 +286,7 @@ export const ContactDiv = styled.div`
     height: fit-content;
     width: 97%;
     padding: 2rem 1rem;
+    margin-bottom: 2rem;
 `;
 export const ContactTitle = styled.h1`
     color: ${({ theme }) => theme.colors.text.body};
